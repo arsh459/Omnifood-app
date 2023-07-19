@@ -10,6 +10,8 @@ html {
   font-size: 62.5%;
   /* 16px*0.625=10px */
   /* Percentage of user brower font-size value*/
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +21,9 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #555;
+
+  /* It only works if nothing is positioned absolute to the body */
+  overflow-x: hidden;
 }
 
 /*********************************/
@@ -32,6 +37,7 @@ body {
   height: 9.6rem;
   /* Fixed Height here because we want to make it sticky */
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -40,7 +46,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -69,6 +75,40 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+  background: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+/* Sticky Navigation */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fdf2e9;
+  z-index: 999;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /*********************************/
 /* Main Section */
 /*********************************/
