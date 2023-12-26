@@ -6,9 +6,6 @@ Click on this :- [Deployed Link](https://omnifood-goyal.netlify.app/)
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 
 ## Project Overview
 
